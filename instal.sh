@@ -8,8 +8,6 @@ wr="\e[38;2;255;80;0m"
 nwr="\e[0m"
 
 
-echo "Sebentar lagi MAINTENANCE"
-exit 1
 
 echo
 echo "             ════════════════════════════════"
