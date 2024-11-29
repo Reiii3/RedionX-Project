@@ -11,6 +11,9 @@ echo "==========================="
 echo "  Maintenace is Runninng"
 echo "==========================="
 echo
+exit
+
+echo
 echo "             ════════════════════════════════"
 echo "                ${name} | ${version} [${versionCode}] "
 echo "             ════════════════════════════════"
