@@ -7,7 +7,9 @@ import axeron.prop
 wr="\e[38;2;255;80;0m"
 nwr="\e[0m"
 
-
+echo "==========================="
+echo "  Maintenace is Runninng"
+echo "==========================="
 echo
 echo "             ════════════════════════════════"
 echo "                ${name} | ${version} [${versionCode}] "
