@@ -11,7 +11,7 @@ echo "==========================="
 echo "  Maintenace is Runninng"
 echo "==========================="
 echo
-exit
+exit 1
 
 echo
 echo "             ════════════════════════════════"
