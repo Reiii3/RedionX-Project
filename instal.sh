@@ -109,7 +109,6 @@ case $1 in
     setprop debug.performance.tuning 1
     setprop debug.performance.profile 1
     setprop debug.performance.force true
-    setprop debug.app.performance_restricted false
     setprop debug.power.profile high_performance
     setprop debug.performance_schema 1
     setprop debug.multicore.processing 1
