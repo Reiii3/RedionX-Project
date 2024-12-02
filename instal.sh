@@ -62,8 +62,6 @@ fi
 if [ -z $runPackage ]; then
     echo "Package is Empty"
     exit 1
-else
-    echo "Package is detected :┌[${runPackage}]"
 fi
 
 if [ -n "$1" ] && [ "$1" == "-fl" ]; then
