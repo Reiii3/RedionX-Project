@@ -7,6 +7,7 @@ import axeron.prop
 local core="r17rYI0tYD6Cp9pPOtlQ2c0rYMzuOEctdEmseIcseHlP29kC2QyrYAcvaZ1Ez9DPOyctd9lC21yrN4mt2ycsXnmP29pQJ5qrR=="
 wr="\e[38;2;188;61;0m"
 nwr="\e[0m"
+runPackage2=${runPackage}
 
 #// Running Code
 echo
@@ -64,6 +65,16 @@ if [ -z $runPackage ]; then
     exit 1
 fi
 
+if [ ${runPackage2} = ${runPackage} ]; then
+    echo "Game Detected : [${runPackage}]"
+    sleep 0.5
+    echo
+else
+    echo " Add Game   : [${runPackage}]"
+    echo "Remove Game : [${runPackage2}]"
+    sleep 0.5
+fi
+
 if [ -n "$1" ] && [ "$1" == "-fl" ]; then
 	usefl=true
 	shift
@@ -79,7 +90,39 @@ if [ -n "$1" ] && [ "$1" == "-vk" ]; then
 	fi
 fi
 
-echo "Installing Game     :├[${runPackage}]"
+if [ ${runPackage} = ${runPackage2} ]; then
+
+  echo "┌[${runPackage}] PerformanceX Actived📲"
+  sleep 0.5
+  echo "├[${runPackage}] Actived Renderer📲"
+  sleep 0.5
+  echo "├[${runPackage}] Activerd Beckend Render"
+  sleep 0.5
+  echo "├[${runPackage}] Render Slected Vulkan"
+  sleep 0.5
+  echo "├[${runPackage}] Driver Game Actived⚙️"
+  sleep 0.5
+  echo "├[${runPackage}] Actived Mediatek ️Tun️er⚙️"
+  sleep 0.5
+  echo "└[${runPackage}] Open To Menu Laxeron📳 "
+  sleep 0.5
+  if [ $usefl = true ]; then
+	    flaunch $runPackage
+  else
+      echo "└[${runPackage}] Open To Menu Laxeron📳 "
+      sleep 0.5
+      echo
+      echo "───────────────────────────────────────────────────────"
+      sleep 0.5
+      echo 
+      echo "| -Have a nice play- |"
+      echo "|      -enjoy-       |"
+	    xtorm $core
+  fi
+
+else
+
+echo "Installing Game     :┌[${runPackage}]"
 echo "┌────────────────────┘"
 sleep 1
 
@@ -155,16 +198,17 @@ if [ $(getprop ro.hardware.egl) == meow ]; then
  sleep 0.5
 fi
 
-if [ $usefl = true ]; then
-	flaunch $runPackage
-else
-  echo "└[${runPackage}] Open To Menu Laxeron📳 "
-  sleep 0.5
-  echo
-  echo "───────────────────────────────────────────────────────"
-  sleep 0.5
-  echo 
-  echo "| -Have a nice play- |"
-  echo "|      -enjoy-       |"
-	xtorm $core
+   if [ $usefl = true ]; then
+	     flaunch $runPackage
+    else
+       echo "└[${runPackage}] Open To Menu Laxeron📳 "
+       sleep 0.5
+       echo
+       echo "───────────────────────────────────────────────────────"
+       sleep 0.5
+       echo 
+       echo "| -Have a nice play- |"
+       echo "|      -enjoy-       |"
+	     xtorm $core
+   fi
 fi
