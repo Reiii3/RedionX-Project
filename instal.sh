@@ -157,7 +157,7 @@ case $1 in
     setprop debug.multicore.processing 1
     setprop debug.systemuicompilerfilter speed
 		performance=true
-		setprop debug.composition.type gpu
+		setprop debug.composition.type vulkan
 		setprop debug.game.mode running
 		echo "├[${runPackage}] PerformanceX Actived📲"
 		sleep 0.5
