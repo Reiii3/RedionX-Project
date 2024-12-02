@@ -107,8 +107,6 @@ if [ ${runPackage} = ${runPackage2} ]; then
   sleep 0.5
   echo "├[${runPackage}] Actived Mediatek ️Tun️er⚙️"
   sleep 0.5
-  echo "└[${runPackage}] Open To Menu Laxeron📳 "
-  sleep 0.5
   if [ $usefl = true ]; then
 	    flaunch $runPackage
   else
