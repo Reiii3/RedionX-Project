@@ -31,6 +31,7 @@ echo "────────────────────────�
     cmd power set-fixed-performance-mode-enabled false
     cmd power set-adaptive-power-saver-enabled true
     cmd power set-mode 1
+    setprop debug.game.mode close
   echo "[${runPackage}] Removing Succesfuly"
   echo "Next Remove Redionpl If installed"
 echo "──────────────────────────────────────────────────────"""
