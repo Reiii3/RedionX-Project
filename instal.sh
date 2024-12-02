@@ -157,6 +157,7 @@ case $1 in
     setprop debug.systemuicompilerfilter speed
 		performance=true
 		setprop debug.composition.type gpu
+		setprop debug.game.mode running
 		echo "├[${runPackage}] PerformanceX Actived📲"
 		sleep 0.5
 		;;
