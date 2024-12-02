@@ -145,6 +145,7 @@ case $1 in
 		setprop debug.sf.hw 1
 		setprop debug.egl.hw 1
 		setprop debug.egl.sync 0
+		setprop debug.egl.swapinterval 0
 		setprop debug.cpuprio 6
     setprop debug.gpuprio 7
     setprop debug.ioprio 7
