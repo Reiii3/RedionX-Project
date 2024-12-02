@@ -72,6 +72,7 @@ if [ ${runPackage2} = ${runPackage} ]; then
 else
     echo " Add Game   : [${runPackage}]"
     echo "Remove Game : [${runPackage2}]"
+    settings delete global updatable_driver_production_opt_in > /dev/null 2>&1
     sleep 0.5
 fi
 
