@@ -149,7 +149,6 @@ case $1 in
 		setprop debug.cpuprio 6
     setprop debug.gpuprio 7
     setprop debug.ioprio 7
-    setprop debug.rs.default-CPU-driver 1
     setprop debug.performance.tuning 1
     setprop debug.performance.profile 1
     setprop debug.performance.force true
