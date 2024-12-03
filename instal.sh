@@ -171,6 +171,7 @@ esac
  cmd thermalservice override-status 0
  cmd power set-fixed-performance-mode-enabled true
  cmd power set-adaptive-power-saver-enabled false
+ cmd package compile -m speed --secondary-dex -f ${runPackage}
  cmd power set-mode 0
 echo "├[${runPackage}] Actived Renderer📲"
 sleep 0.5
